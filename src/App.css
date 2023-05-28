@@ -1,0 +1,49 @@
+.App {
+  text-align: center;
+  min-height: 650px;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+button:disabled {
+  opacity: 0.6;
+}
+
+@media only screen and (min-width: 600px) {
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar {
+    height: 8p;
+    width: 8px;
+    background-color: #F5F5F5;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .1);
+    background-color: rgba(85, 85, 85, 0.197);
+  }
+
+  ::-webkit-scrollbar-button {
+    height: 1px;
+    width: 1px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.8);
+  }
+}
+
+.no-scroll::-webkit-scrollbar {
+  display: none !important;
+}
